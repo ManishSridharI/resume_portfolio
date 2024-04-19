@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "build-and-start": "next build && node server.js",
-    "dev": "concurrently \"next dev\" \"node server.js\""
+    "dev": "next dev"
   },
   "dependencies": {
     "axios": "^0.21.1",
