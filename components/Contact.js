@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import myData from "@constants/mydata";
 
 export default function Contact() {
+  const formRef = useRef(null);
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = {
@@ -20,6 +21,7 @@ export default function Contact() {
   
     const responseData = await response.json();
     console.log(responseData);
+    formRef.current.reset();
   };  
   return (
     <section>
@@ -132,7 +134,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col" onSubmit={handleSubmit}>
+          <form className="form rounded-lg bg-white p-4 flex flex-col" onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
               Your Name
