@@ -171,6 +171,9 @@ export default function AboutMe() {
               {myData.achievements.a6}
               </span>
           </p>
+          <p className="text-md text-gray-700 mb-4 dark:text-gray-300">   
+                 
+          </p>
             <h1 className="bg-red-500 text-2xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Skills
             </h1>
