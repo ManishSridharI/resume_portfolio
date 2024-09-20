@@ -87,6 +87,19 @@ export default function AboutMe() {
                   </div>
                 </a>
               </div>
+              <div className="flex flex-row justify-start items-center">
+                <a
+                  href={myData.socialLinks.google_scholar}
+                  className="flex flex-row items-center space-x-4 group"
+                  target="__blank"
+                >
+                  <div className="my-4">&rarr;</div>
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
+                    Google Scholar
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <div className="col-span-1 md:col-span-2">
@@ -103,7 +116,7 @@ export default function AboutMe() {
           </h1>
           <p className="text-md text-gray-700 mb-4 dark:text-gray-300">
               <a
-                  href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2023.1320652/full"
+                  href="https://www.sciencedirect.com/science/article/pii/S2090123224003205"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
@@ -114,7 +127,7 @@ export default function AboutMe() {
           </p>
           <p className="text-md text-gray-700 mb-4 dark:text-gray-300">
               <a
-                  href="https://onlinelibrary.wiley.com/doi/10.1111/tpj.16570"
+                  href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2023.1320652/full"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
@@ -123,13 +136,40 @@ export default function AboutMe() {
               </a>
               {myData.achievements.a2}
           </p>
+          <p className="text-md text-gray-700 mb-4 dark:text-gray-300">
+              <a
+                  href="https://onlinelibrary.wiley.com/doi/full/10.1111/tpj.16570"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+              >
+                  Publication
+              </a>
+              {myData.achievements.a3}
+          </p>
+          <p className="text-md text-gray-700 mb-4 dark:text-gray-300">
+              <a
+                  href="https://www.biorxiv.org/content/10.1101/2023.08.15.553447v1.abstract"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+              >
+                  Publication
+              </a>
+              {myData.achievements.a4}
+          </p>
           <p className="text-gray-800 font-bold dark:text-gray-300">
               <span className="border-b-2 border-gray-800 dark:border-gray-300">
                   Applied Intelligence India AIM hackathon
               </span>
           </p>
           <p className="text-md text-gray-700 mb-4 dark:text-gray-300">   
-              {myData.achievements.a3}
+              {myData.achievements.a5}
+          </p>
+          <p className="text-gray-800 font-bold dark:text-gray-300">
+              <span className="border-b-2 border-gray-800 dark:border-gray-300">
+              {myData.achievements.a6}
+              </span>
           </p>
             <h1 className="bg-red-500 text-2xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Skills
