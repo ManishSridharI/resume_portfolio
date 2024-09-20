@@ -48,7 +48,7 @@ const myData = {
       desc: "We do research on 4 projects that are funded by NSF and DOE.",
       b1: "IRNet - Led the web interface development for machine learning predictions of cancer treatment with an accuracy of 72% using ReactJS and Flask with responsive design and modern web stacks for optimal performance and accessibility",
       b2: "KBCommons and SoyKB - Transformed projects by enhancing data integrity with advanced SQL and creating interactive UIs with PHP/Laravel while managing approximately 8TB of data, optimizing system performance and reliability.",
-      b2: "G2PDeep - Created a cutting-edge web platform employing ReactJS, Django, and SQL, which enabled precise marker discovery in multi-omics data; utilized advanced algorithms that are now used by over 585 researchers in ongoing studies.",
+      b3: "G2PDeep - Created a cutting-edge web platform employing ReactJS, Django, and SQL, which enabled precise marker discovery in multi-omics data; utilized advanced algorithms that are now used by over 585 researchers in ongoing studies.",
       b4: "IMPRes Tool - Developed an innovative application for active pathway detection using ExpressJS, NodeJS, and SQL. This tool, based on a dynamic programming approach for network integration.",
       tech: "Technologies: ReactJS, Python, Flask, SQL, PHP, Laravel, Django, NodeJS, Docker, Ubuntu, Excel, Linux, ExpressJS",
     },

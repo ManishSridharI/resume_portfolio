@@ -22,6 +22,7 @@ export default function Experience() {
                 b1={exp.b1}
                 b2={exp.b2}
                 b3={exp.b3}
+                b4={exp.b4}
                 tech={exp.tech}
               />
               {idx === myData.experience.length - 1 ? null : (
@@ -40,7 +41,7 @@ export default function Experience() {
   );
 }
 
-const ExperienceCard = ({ title, desc, year, company, b1, b2, b3, tech }) => {
+const ExperienceCard = ({ title, desc, year, company, b1, b2, b3, b4, tech }) => {
   return (
     <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
       <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-3xl text-slate-400 font-bold dark:text-gray-800">
@@ -53,6 +54,7 @@ const ExperienceCard = ({ title, desc, year, company, b1, b2, b3, tech }) => {
         <li className="text-xs text-gray-600 dark:text-gray-400 my-2"><span className="text-blue-500 mr-2">&#8226;</span>{b1}</li>
         <li className="text-xs text-gray-600 dark:text-gray-400 my-2"><span className="text-blue-500 mr-2">&#8226;</span>{b2}</li>
         <li className="text-xs text-gray-600 dark:text-gray-400 my-2"><span className="text-blue-500 mr-2">&#8226;</span>{b3}</li>
+        <li className="text-xs text-gray-600 dark:text-gray-400 my-2"><span className="text-blue-500 mr-2">&#8226;</span>{b4}</li>
       </ul>
       <p className="text-xs italic text-gray-600 dark:text-gray-400 my-2">{tech}</p>
     </div>
